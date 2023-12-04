@@ -92,3 +92,47 @@
         width: 100%;
     }
 }
+
+
+/* ... Your existing CSS code ... */
+
+/* Responsive for screens less than 600px */
+@media screen and (max-width: 600px) {
+    .about-section {
+        padding: 20px;
+        display: block;
+    }
+    .about-image-content {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-image1 {
+        width: 100%;
+        height: auto;
+    }
+    .about-text-content {
+        width: 100%;
+    }
+    .about-title {
+        font-size: 32px;
+    }
+    .about-title span::before {
+        width: 50%;
+        bottom: -8px;
+    }
+    .about-description {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .about-text-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .about-text-sTitle {
+        font-size: 16px;
+    }
+    .about-text-description {
+        margin: 8px 16px;
+    }
+}

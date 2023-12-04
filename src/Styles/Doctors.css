@@ -96,7 +96,7 @@
     letter-spacing: .7px;
 }
 /* Responsive */
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     .dt-title {
         font-size: 32px;
     }
@@ -104,4 +104,52 @@
         margin: 48px 0 0;
         font-size: 18px;
     }
+} */
+
+/* For screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    .doctor-section {
+        padding: 16px;
+        margin: 16px auto;
+        width: 90%;
+    }
+
+    .dt-title {
+        font-size: 28px;
+    }
+
+    .dt-description {
+        margin: 32px 0 0;
+        font-size: 16px;
+    }
+
+    .dt-card {
+        width: calc(100% - 32px); /* Adjusting card width to fit the screen */
+        height: auto; /* Allowing cards to adjust their height */
+        margin-bottom: 20px; /* Adding space between cards */
+    }
+
+    .dt-card-img {
+        height: 200px; /* Reducing image height for smaller screens */
+    }
+
+    .dt-card-name {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .dt-card-title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .dt-card-stars,
+    .dt-card-reviews {
+        font-size: 16px;
+    }
+    
+    .dt-smalldes {
+        font-size: 14px;
+    }
 }
+

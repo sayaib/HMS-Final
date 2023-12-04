@@ -127,3 +127,20 @@
         display: block;
     }
 }
+
+/* Responsive for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .navbar-title {
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+    .navbar-sign {
+        font-size: 30px; /* Adjust the font size as needed */
+    }
+    .navbar-links {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+    .mobile-navbar-links li a {
+        font-size: 20px; /* Adjust the font size as needed */
+    }
+}
+

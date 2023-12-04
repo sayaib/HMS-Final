@@ -98,3 +98,42 @@
         height: 80%;
     }
 }
+
+/* For screens less than 600px */
+@media screen and (max-width: 600px) {
+    .ba-section {
+        padding: 24px;
+    }
+    .ba-image-content,
+    .ba-text-content {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ba-image1 {
+        width: 100%;
+        height: auto;
+    }
+    .ba-title {
+        font-size: 28px;
+        letter-spacing: 0.5px;
+    }
+    .ba-title > span::before {
+        width: 60%;
+        bottom: -8px;
+    }
+    .ba-description {
+        font-size: 16px;
+        letter-spacing: 0.6px;
+        line-height: 1.6rem;
+        margin: 24px 0;
+    }
+    .ba-checks {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin: 20px 0;
+    }
+    .ba-appointment-btn {
+        padding: 16px 20px;
+        font-size: 18px;
+    }
+}

@@ -92,3 +92,44 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+
+/* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .info-section {
+        padding: 0 16px;
+    }
+    .info-title {
+        font-size: 32px;
+    }
+    .info-title span::before {
+        width: 50%;
+    }
+    .info-description {
+        margin: 32px 8px;
+        font-size: 16px;
+        line-height: 1.6rem;
+    }
+    .info-cards-content {
+        margin: 32px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info-card-title {
+        font-size: 24px;
+    }
+    .info-card-description {
+        margin: 16px;
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+    .info-card-icon {
+        top: -16px;
+        left: 40%;
+        padding: 8px;
+        font-size: 20px;
+    }
+    .info-fa-icon {
+        font-size: 20px;
+    }
+}

@@ -69,21 +69,29 @@
     line-height: 1.7rem;
 }
 /* Responsive */
+
+/* Responsive */
 @media screen and (max-width: 600px) {
     .form-container {
-        padding: 24px;
+        padding: 16px; /* Adjust padding for smaller screens */
     }
     .form-title {
-        font-size: 24px;
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+    .form-title span::before {
+        width: 50%; /* Adjust the underline width */
+        bottom: -8px; /* Move the underline closer to the text */
     }
     .form-content label {
-        font-size: 18px;
+        font-size: 20px; /* Adjust label font size */
     }
     .form-content label :is(input, select) {
-        font-size: 16px;
+        font-size: 16px; /* Adjust input/select font size */
     }
     .success-message {
-        margin: 12px 0 0 0;
-        font-size: 18px;
+        font-size: 18px; /* Adjust success message font size */
+    }
+    .error-message {
+        font-size: 14px; /* Adjust error message font size */
     }
 }
