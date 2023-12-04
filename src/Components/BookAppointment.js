@@ -1,5 +1,5 @@
 import React from "react";
-import Doctor from "../Assets/doctor-book-appointment.png";
+import Doctor from "../Assets/doctor-book-appointment.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,
@@ -33,11 +33,11 @@ function BookAppointment() {
           <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> OPEN HOURS :
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Mon - Sat : 8:00 AM - 8:00 PM
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Monday - Sunday : 8:00 AM - 8:00 PM
         </p>
-        <p className="ba-checks">
+        {/* <p className="ba-checks">
           <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Sunday : 8:00 AM - 2:00 PM
-        </p>
+        </p> */}
         {/* <button
             className="text-appointment-btn"
             type="button"

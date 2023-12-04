@@ -151,7 +151,7 @@ function Footer() {
             title="Twitter"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ fontSize: "0.8rem", textDecoration: "none", color: "#D0D3DA" }}
+            style={{ fontSize: "0.8rem", textDecoration: "none", color: "#D0D3DA", borderBottom: "2px solid #D0D3DA" }}
           >
             Developed and Designed by Sayaib Sarkar
           </a>
