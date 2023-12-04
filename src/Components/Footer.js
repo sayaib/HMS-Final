@@ -22,7 +22,7 @@ function Footer() {
             </p>
           </div>
 
-          <SubscribeNewsletter />
+          {/* <SubscribeNewsletter /> */}
         </div>
 
         <div className="ft-list">
@@ -32,13 +32,13 @@ function Footer() {
               <a href="#guidingPrinciple">Guiding Principle</a>
             </li>
             <li>
-              <a href="#staff">STAFF</a>
+              <a href="#staff">Staff</a>
             </li>
             <li>
               <a href="#ourValues">Our Values</a>
             </li>
             <li>
-              <a href="#missionVission">mission and Vision</a>
+              <a href="#missionVission">Mission and Vision</a>
             </li>
             <li>
               <a href="#ourCommitment">Our Commitments</a>
@@ -147,7 +147,7 @@ function Footer() {
 
         <div>
           <a
-            href="https://in.linkedin.com/in/sayaib-sarkar-847b3b169"
+            href="mailto:ssayaib@gmail.com"
             title="Twitter"
             target="_blank"
             rel="noopener noreferrer"
