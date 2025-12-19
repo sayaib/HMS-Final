@@ -1,123 +1,154 @@
+/* Navbar Section */
 .navbar-section {
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    background-color: white;
-    z-index: 100;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    
-    /* Sticky Animation Props */
+    height: 90px; /* Increased height for better spacing */
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
     position: sticky;
     top: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
+    backdrop-filter: blur(8px);
 }
 
-/* New class for sticky state */
+/* Sticky State */
 .navbar-sticky {
     padding: 0 40px;
-    height: 70px; /* Shrink height */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Stronger shadow */
-    background-color: rgba(255, 255, 255, 0.98); /* Slight transparency */
-    backdrop-filter: blur(10px);
+    height: 70px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
 }
 
+/* Logo */
 .navbar-title a {
-    color: #0C8346;
-    letter-spacing: .5px;
     text-decoration: none;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
 }
-.navbar-title {
-    font-family: 'Poppins', sans-serif;
+
+.navbar-logo {
+    width: 140px;
+    height: auto;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navbar-sign {
-    color: #0C8346;
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
+
+.navbar-sticky .navbar-logo {
+    width: 110px;
 }
+
+/* Navigation Items */
 .navbar-items {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
-    font-family: 'Rubik', sans-serif;
-    background-color: transparent; 
+    gap: 40px; /* Increased gap */
+    margin: 0;
+    padding: 0;
 }
-.navbar-items > li {
-    list-style-type: none;
-}
+
 .navbar-links {
     text-decoration: none;
-    color: #1a1a1a;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 5px 0;
     transition: color 0.3s ease;
 }
+
+/* Animated Underline Effect */
+.navbar-links::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #0C8346;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+}
+
 .navbar-links:hover {
     color: #0C8346;
 }
-.navbar-btn {
-    padding: 10px 20px;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    outline: transparent;
-    background-color: #0C8346;
-    font-size: 14px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    letter-spacing: .5px;
-    cursor: pointer;
-    transition: all .3s ease;
-    box-shadow: 0 4px 10px rgba(12, 131, 70, 0.2);
-    display: inline-flex;
+
+.navbar-links:hover::after {
+    width: 100%;
+}
+
+/* Action Buttons Group */
+.navbar-btn-group {
+    display: flex;
     align-items: center;
+    gap: 16px;
+}
+
+.navbar-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    color: #0C8346;
+    background-color: rgba(12, 131, 70, 0.1);
+    border: 1px solid rgba(12, 131, 70, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
 }
 
 .navbar-btn svg {
-    font-size: 20px;
+    font-size: 22px;
     fill: currentColor;
-}
-.navbar-logo {
-    width: 120px;
-    margin-top: 0;
-    transition: width 0.3s ease; /* Animate logo size */
+    transition: transform 0.3s ease;
 }
 
-/* Shrink logo on sticky */
-.navbar-sticky .navbar-logo {
-    width: 100px;
-}
-
-.navbar-icon-btn {
-    margin-right: 0.5rem;
-}
 .navbar-btn:hover {
-    background-color: #096836;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(12, 131, 70, 0.3);
+    background-color: #0C8346;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(12, 131, 70, 0.25);
+    border-color: #0C8346;
 }
-/* Hamburger Icon */
+
+.navbar-btn:hover svg {
+    transform: scale(1.1);
+}
+
+.navbar-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Mobile Navigation */
 .mobile-nav {
     display: none;
 }
+
 .hamb-icon {
-    width: 26px;
-    height: 26px;
+    font-size: 24px;
+    color: #2c3e50;
     cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 8px;
+    border-radius: 8px;
 }
+
 .hamb-icon:hover {
-    color: #0cc2ea;
+    color: #0C8346;
+    background-color: rgba(12, 131, 70, 0.05);
 }
-/* Mobile Navbar */
+
 .mobile-navbar {
     display: flex;
     flex-direction: column;
@@ -126,100 +157,117 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: white;
-    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    z-index: 2000;
     justify-content: center;
     align-items: center;
-    transition: left .5s ease-in-out;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-navbar-close {
-    position: absolute;
-    top: 28px;
-    right: 28px;
-}
-.mobile-navbar-close .hamb-icon:hover {
-    color: rgb(255, 22, 22);
-}
+
 .open-nav {
     left: 0;
 }
+
+.mobile-navbar-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.mobile-navbar-close:hover {
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+.mobile-navbar-close .hamb-icon {
+    font-size: 28px;
+}
+
+.mobile-navbar-close:hover .hamb-icon {
+    color: #dc3545;
+}
+
 .mobile-navbar-links {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    font-size: 24px;
-    gap: 24px;
+    gap: 32px;
     text-align: center;
+    padding: 0;
 }
+
 .mobile-navbar-links li a {
     text-decoration: none;
-    color: black;
+    color: #2c3e50;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    letter-spacing: .8px;
-    transition: color .3s ease-in-out;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
 }
+
 .mobile-navbar-links li a:hover {
-    color: #0cc2ea;
+    color: #0C8346;
+    transform: scale(1.05);
+    display: inline-block;
 }
-/* Responsive */
-@media screen and (max-width: 900px) {
+
+/* Responsive Design */
+@media screen and (max-width: 1100px) {
+    .navbar-section {
+        padding: 0 30px;
+    }
+    
+    .navbar-items {
+        gap: 24px;
+    }
+    
+    .navbar-links {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 950px) {
     .navbar-items {
         display: none;
-    }
-    
-    .navbar-btn {
-        padding: 8px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-    
-    .navbar-btn svg {
-        font-size: 18px;
     }
     
     .mobile-nav {
         display: block;
     }
     
-    .navbar-logo {
-        width: 100px;
+    .navbar-btn-group {
+        display: none; /* Hide action buttons on mobile to reduce clutter, or keep them if preferred */
     }
+    
+    /* Option: Keep one primary CTA on mobile if needed, but standard pattern is usually just hamburger */
 }
 
-/* Responsive for screens smaller than 600px */
 @media screen and (max-width: 600px) {
     .navbar-section {
         padding: 0 20px;
-    }
-
-    .navbar-title {
-        font-size: 16px; 
+        height: 70px;
     }
     
-    .navbar-sign {
-        font-size: 30px; 
-    }
-    
-    .navbar-btn {
-        width: 35px;
-        height: 35px;
-        padding: 6px;
-    }
-    
-    .navbar-btn svg {
-        font-size: 16px;
+    .navbar-sticky {
+        padding: 0 20px;
+        height: 60px;
     }
 
     .navbar-logo {
-        width: 80px;
+        width: 100px;
     }
     
-    .navbar-links {
-        font-size: 14px; 
+    .navbar-sticky .navbar-logo {
+        width: 90px;
     }
-    .mobile-navbar-links li a {
-        font-size: 20px; 
+    
+    .hamb-icon {
+        font-size: 22px;
     }
 }

@@ -1,39 +1,101 @@
 .card-paper {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    position: relative;
-    border: 1px solid #fafafa;
-    border-radius: 1rem;
-    padding: 1rem 0.5rem;
-    width: 100%;
-    margin: 16px; /* approximated from margin: 2 (theme spacing usually 8px * 2 = 16px) */
+    border-radius: 16px !important;
+    border: 1px solid #f0f0f0 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    overflow: hidden;
+    height: 100%;
+    background: #ffffff !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02) !important;
+    cursor: pointer;
 }
 
-.card-icon-container {
-    height: 80px;
-    width: 80px;
+.card-paper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+    border-color: transparent !important;
+}
+
+.card-content {
     display: flex;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    left: 12px;
-    color: #ff0000;
-    border-radius: 25%;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.card-icon-wrapper {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-paper:hover .card-icon-wrapper {
+    transform: scale(1.05);
 }
 
 .card-icon-img {
-    min-width: 40px;
-    min-height: 40px;
-    color: #ffffff;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
 }
 
-.card-text-container {
-    padding: 8px; /* padding: 1 -> 8px */
-    margin: 16px 0 16px 0;
+.card-text-wrapper {
+    flex-grow: 1;
+    min-width: 0; /* Prevents overflow */
 }
 
 .card-title {
-    font-size: 0.9rem;
-    font-weight: 550;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 1.05rem !important;
+    color: #2c3e50;
+    line-height: 1.4 !important;
+    letter-spacing: 0.3px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-paper:hover .card-title {
+    color: #0C8346; /* Health Plus Green */
+}
+
+.card-action-icon {
+    color: #e2e8f0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.card-paper:hover .card-action-icon {
+    color: #0C8346;
+    transform: translateX(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .card-content {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .card-icon-wrapper {
+        width: 44px;
+        height: 44px;
+    }
+
+    .card-icon-img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .card-title {
+        font-size: 0.95rem !important;
+    }
 }

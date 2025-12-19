@@ -15,18 +15,35 @@ function BookAppointment() {
 
       <div className="ba-text-content">
         <h3 className="ba-title">
-          <span>Why Us</span>
+          <span>Why Choose Us</span>
         </h3>
         <p className="ba-description">
-          Treatment Solution Polyclinic is a premier provider of healthcare services that take a holistic approach to your wellness. Our knowledgeable staff of professionals offers general and specialized medical services, as well as a wide range of preventive care. Our comprehensive care includes comprehensive assessments, diagnosis, and treatment of a wide range of medical conditions. We also offer alternative treatments, such as acupuncture and herbal medicine, to enhance your well-being. Let us help you take control of your health today!
+          Treatment Solution Polyclinic is a premier provider of healthcare services that take a holistic approach to your wellness. Our knowledgeable staff offers general and specialized medical services, as well as a wide range of preventive care.
         </p>
 
-        <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} className="ba-icon-blue" /> OPEN HOURS :
-        </p>
-        <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} className="ba-icon-blue" /> Monday - Sunday : 8:00 AM - 8:00 PM
-        </p>
+        <div className="ba-features">
+          <div className="ba-feature-item">
+            <FontAwesomeIcon icon={faCircleCheck} className="ba-feature-icon" />
+            <span>Comprehensive Assessments & Diagnosis</span>
+          </div>
+          <div className="ba-feature-item">
+            <FontAwesomeIcon icon={faCircleCheck} className="ba-feature-icon" />
+            <span>Alternative Treatments (Acupuncture, Herbal)</span>
+          </div>
+          <div className="ba-feature-item">
+            <FontAwesomeIcon icon={faCircleCheck} className="ba-feature-icon" />
+            <span>Personalized Wellness Plans</span>
+          </div>
+        </div>
+
+        <div className="ba-schedule-card">
+          <div className="ba-schedule-header">
+            <FontAwesomeIcon icon={faCircleCheck} className="ba-schedule-icon" />
+            <h4>Open Hours</h4>
+          </div>
+          <p className="ba-schedule-time">Monday - Sunday</p>
+          <p className="ba-schedule-hours">8:00 AM - 8:00 PM</p>
+        </div>
       </div>
     </div>
   );

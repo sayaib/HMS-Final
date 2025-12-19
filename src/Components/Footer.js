@@ -112,8 +112,8 @@ function Footer() {
 
         <div>
           <a
-            href="mailto:ssayaib@gmail.com"
-            title="Email Developer"
+            href="https://www.instagram.com/sayaib_sarkar/"
+            title="Developer Instagram"
             target="_blank"
             rel="noopener noreferrer"
             className="developer-link"

@@ -65,197 +65,176 @@ function Info() {
         />
       </div>
 
+      <div className="info-title-content">
+        <h3 className="info-title">
+          <span>Our Specialties</span>
+        </h3>
+      </div>
+
       <div>
         <Grid
-          align="center"
-          border="1px solid #000"
+          container
           alignItems="center"
-          justify="center"
+          justifyContent="center"
+          className="info-grid-container"
         >
-          <Divider className="grid-divider" />
-          <Grid container item xs={12} alignItems="center" justify="center">
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="DonutSmall"
-                  secondary="Cardiology"
-                  percentage={89.4}
-                  color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
-                  iconPerformance={imageSevenTeen}
-                />
-              </Grid>
-              <Grid container className="grid-margin-bottom" item lg={6}>
-                <Card
-                  primary="Assessment"
-                  secondary="Cardiac Surgery"
-                  percentage={100.78}
-                  color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
-                  iconPerformance={imageOne}
-                />
-              </Grid>
-
+          <Grid container item xs={12} spacing={3} justifyContent="center">
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="DonutSmall"
+                secondary="Cardiology"
+                percentage={89.4}
+                color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
+                iconPerformance={imageSevenTeen}
+              />
             </Grid>
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Explore"
-                  secondary="Neurology"
-                  percentage={90.56}
-                  color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
-                  iconPerformance={imageTwo}
-                />
-              </Grid>
-
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Subway"
-                  secondary="Neurosurgery"
-                  percentage={78.8}
-                  color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
-                  iconPerformance={imageThree}
-                />
-              </Grid>
-
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Assessment"
+                secondary="Cardiac Surgery"
+                percentage={100.78}
+                color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
+                iconPerformance={imageOne}
+              />
             </Grid>
 
-            {/* ---------------------------------- */}
-
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="DonutSmall"
-                  secondary="Psychiatrist"
-                  percentage={89.4}
-                  color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
-                  iconPerformance={imageFour}
-                />
-              </Grid>
-              <Grid container className="grid-margin-bottom" item lg={6}>
-                <Card
-                  primary="Assessment"
-                  secondary="Gastroenterology"
-                  percentage={100.78}
-                  color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
-                  iconPerformance={imageFive}
-                />
-              </Grid>
-
-            </Grid>
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Explore"
-                  secondary="Gynecology"
-                  percentage={90.56}
-                  color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
-                  iconPerformance={imageSix}
-                />
-              </Grid>
-
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Subway"
-                  secondary="Nephrology"
-                  percentage={78.8}
-                  color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
-                  iconPerformance={imageSeven}
-                />
-              </Grid>
-
-            </Grid>
-            {/* ----------------------------------------------- */}
-
-
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="DonutSmall"
-                  secondary="Urology"
-                  percentage={89.4}
-                  color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
-                  iconPerformance={imageEight}
-                />
-              </Grid>
-              <Grid container className="grid-margin-bottom" item lg={6}>
-                <Card
-                  primary="Assessment"
-                  secondary="Chest Medicine"
-                  percentage={100.78}
-                  color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
-                  iconPerformance={imageNine}
-                />
-              </Grid>
-
-            </Grid>
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Explore"
-                  secondary="General Surgery"
-                  percentage={90.56}
-                  color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
-                  iconPerformance={imageTen}
-                />
-              </Grid>
-
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Subway"
-                  secondary="Orthopedics"
-                  percentage={78.8}
-                  color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
-                  iconPerformance={imageEleven}
-                />
-              </Grid>
-
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Explore"
+                secondary="Neurology"
+                percentage={90.56}
+                color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
+                iconPerformance={imageTwo}
+              />
             </Grid>
 
-            {/* ----------------------------------------------- */}
-
-
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="DonutSmall"
-                  secondary="General Medicine"
-                  percentage={89.4}
-                  color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
-                  iconPerformance={imageTwelve}
-                />
-              </Grid>
-              <Grid container className="grid-margin-bottom" item lg={6}>
-                <Card
-                  primary="Assessment"
-                  secondary="Diabetology"
-                  percentage={100.78}
-                  color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
-                  iconPerformance={imageThirteen}
-                />
-              </Grid>
-
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Subway"
+                secondary="Neurosurgery"
+                percentage={78.8}
+                color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
+                iconPerformance={imageThree}
+              />
             </Grid>
-            <Grid container item sm={6}>
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Explore"
-                  secondary="Dermatology"
-                  percentage={90.56}
-                  color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
-                  iconPerformance={imageFourteen}
-                />
-              </Grid>
 
-              <Grid container item lg={6} className="grid-margin-bottom">
-                <Card
-                  primary="Subway"
-                  secondary="ENT"
-                  percentage={78.8}
-                  color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
-                  iconPerformance={imageFifteen}
-                />
-              </Grid>
-
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="DonutSmall"
+                secondary="Psychiatrist"
+                percentage={89.4}
+                color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
+                iconPerformance={imageFour}
+              />
             </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Assessment"
+                secondary="Gastroenterology"
+                percentage={100.78}
+                color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
+                iconPerformance={imageFive}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Explore"
+                secondary="Gynecology"
+                percentage={90.56}
+                color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
+                iconPerformance={imageSix}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Subway"
+                secondary="Nephrology"
+                percentage={78.8}
+                color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
+                iconPerformance={imageSeven}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="DonutSmall"
+                secondary="Urology"
+                percentage={89.4}
+                color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
+                iconPerformance={imageEight}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Assessment"
+                secondary="Chest Medicine"
+                percentage={100.78}
+                color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
+                iconPerformance={imageNine}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Explore"
+                secondary="General Surgery"
+                percentage={90.56}
+                color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
+                iconPerformance={imageTen}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Subway"
+                secondary="Orthopedics"
+                percentage={78.8}
+                color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
+                iconPerformance={imageEleven}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="DonutSmall"
+                secondary="General Medicine"
+                percentage={89.4}
+                color="linear-gradient(60deg, rgba(94,53,177,1) 0%, rgba(3,155,229,1) 100%)"
+                iconPerformance={imageTwelve}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Assessment"
+                secondary="Diabetology"
+                percentage={100.78}
+                color="linear-gradient(60deg, rgba(245,0,87,1) 0%, rgba(255,138,128,1) 100%)"
+                iconPerformance={imageThirteen}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Explore"
+                secondary="Dermatology"
+                percentage={90.56}
+                color="linear-gradient(60deg, rgba(251,140,0,1) 0%, rgba(255,202,41,1) 100%)"
+                iconPerformance={imageFourteen}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card
+                primary="Subway"
+                secondary="ENT"
+                percentage={78.8}
+                color="linear-gradient(60deg, rgba(67,160,71,1) 0%, rgba(255,235,59,1) 100%)"
+                iconPerformance={imageFifteen}
+              />
+            </Grid>
+
           </Grid>
         </Grid>
       </div>

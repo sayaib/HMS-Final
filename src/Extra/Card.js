@@ -1,46 +1,37 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import "./Card.css";
 
 export default function Card(props) {
     const IconPerformance = props.iconPerformance;
 
     return (
-        <Paper className="card-paper">
-            <Grid container>
-                {/* Equivalent to Hidden only="sm" */}
-                <Box sx={{ display: { xs: 'block', sm: 'none', md: 'block' } }}>
-                    <Grid
-                        item
-                        className="card-icon-container"
-                        style={{ background: props.color }}
-                    >
-                        <img
-                            src={IconPerformance}
-                            alt={props.secondary || "Card Icon"}
-                            className="card-icon-img"
-                        />
-                    </Grid>
-                </Box>
-            </Grid>
-            <Grid container>
-                <Grid
-                    container
-                    justifyContent="flex-end"
-                    className="card-text-container"
+        <Paper className="card-paper" elevation={0}>
+            <div className="card-content">
+                <div 
+                    className="card-icon-wrapper" 
+                    style={{ background: props.color }}
                 >
+                    <img
+                        src={IconPerformance}
+                        alt={props.secondary || "Card Icon"}
+                        className="card-icon-img"
+                    />
+                </div>
+                <div className="card-text-wrapper">
                     <Typography
                         variant="h6"
-                        align="left"
                         className="card-title"
                     >
-                        {props.secondary != null ? props.secondary : "..."}
+                        {props.secondary || "..."}
                     </Typography>
-                </Grid>
-            </Grid>
+                </div>
+                <div className="card-action-icon">
+                    <ChevronRightIcon />
+                </div>
+            </div>
         </Paper>
     );
 }

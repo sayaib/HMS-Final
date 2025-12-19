@@ -1,158 +1,144 @@
 .doctor-section {
-    padding: 24px;
-    margin: 24px auto;
-    width: 80%;
+    padding: 40px 24px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
     text-align: center;
-    background-color: rgb(247, 247, 247);
+    background-color: transparent; /* Changed from grey to transparent to blend better or let cards pop */
 }
+
 .dt-title-content {
-    margin: 0 0 48px 0;
+    margin: 0 0 60px 0;
 }
+
 .dt-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: .7px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+    color: #333;
 }
+
 .dt-title > span {
     position: relative;
+    z-index: 1;
 }
+
 .dt-title span::before {
     content: '';
     position: absolute;
-    width: 64%;
-    height: 4px;
-    background-color: #9D2553;
-    border-radius: 8px;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(12, 131, 70, 0.2); /* Brand green with opacity */
     left: 0;
-    bottom: -10px;
+    bottom: 2px;
+    z-index: -1;
+    border-radius: 4px;
 }
+
 .dt-description {
-    margin: 48px auto 0;
+    margin: 0 auto;
     text-align: center;
-    color: rgb(77, 75, 75);
+    color: #666;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    letter-spacing: .8px;
-    line-height: 1.6rem;
+    line-height: 1.6;
+    max-width: 700px;
 }
 
-.dt-smalldes{
-    text-align: center;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    letter-spacing: .8px;
+/* Contact Grid Styling */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 48px;
 }
-/* Doctor Cards */
-.dt-cards-content {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
-.dt-card {
-    width: 300px;
-    height: auto;
-    padding-bottom: 24px;
+
+.contact-card {
     background: white;
-    border-radius: 20px;
+    padding: 40px 30px;
+    border-radius: 24px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     transition: all 0.3s ease;
-    overflow: hidden;
+    border: 1px solid #f0f0f0;
 }
-.dt-card:hover {
+
+.contact-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(12, 131, 70, 0.15);
+    border-color: #0C8346;
 }
-.dt-card-img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    background-color: #f0f0f0;
-    border-radius: 20px 20px 0 0;
-    padding: 0;
+
+.contact-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: rgba(12, 131, 70, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
 }
-.dt-card-name {
-    margin: 16px 0 4px 0;
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a1a1a;
-    letter-spacing: .5px;
+
+.contact-card:hover .contact-icon-wrapper {
+    background: #0C8346;
+    transform: scale(1.1);
 }
-.dt-card-title {
-    margin: 0 0 12px;
+
+.contact-icon {
+    font-size: 32px;
     color: #0C8346;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+    color: white;
+}
+
+.contact-card h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.dt-card-stars {
-    font-size: 16px;
-    color: #FFC107;
-    margin-bottom: 8px;
-}
-.dt-card-reviews {
-    color: #888;
-    font-size: 14px;
-    font-weight: 500;
+    color: #333;
+    margin-bottom: 16px;
 }
 
-/* For screens less than 600px wide */
-@media screen and (max-width: 600px) {
+.contact-card p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 4px 0;
+}
+
+.invisible-text {
+    opacity: 0;
+    user-select: none;
+}
+
+.contact-action {
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
     .doctor-section {
-        padding: 16px;
-        margin: 16px auto;
-        width: 90%;
-    }
-
-    .dt-title {
-        font-size: 24px;
-    }
-
-    .dt-description {
-        margin: 24px 0 0;
-        font-size: 14px;
-    }
-
-    .dt-card {
-        width: calc(100% - 24px); /* Adjusting card width to fit the screen */
-        height: auto; /* Allowing cards to adjust their height */
-        margin-bottom: 16px; /* Adding space between cards */
-    }
-
-    .dt-card-img {
-        height: 180px; /* Reducing image height for smaller screens */
-    }
-
-    .dt-card-name {
-        font-size: 16px;
-        margin-top: 6px;
-    }
-
-    .dt-card-title {
-        font-size: 14px;
-        margin-bottom: 4px;
-    }
-
-    .dt-card-stars,
-    .dt-card-reviews {
-        font-size: 14px;
+        padding: 24px;
+        width: 100%;
+        margin: 24px 0;
     }
     
-    .dt-smalldes {
-        font-size: 14px;
+    .dt-title {
+        font-size: 28px;
     }
-}
-.dt-description-margin {
-    margin-bottom: 0.8rem;
-}
-.dt-sunday-margin {
-    margin-bottom: 0.8rem;
+    
+    .contact-card {
+        padding: 24px;
+    }
 }

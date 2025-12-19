@@ -145,10 +145,47 @@
 .management-margin-top {
     margin-top: -0.5rem;
 }
-.management-role {
-    font-weight: 600;
+
+.management-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    margin-top: 24px;
+    transition: transform 0.3s ease;
 }
+
+.management-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+}
+
+.management-header {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+.management-role {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #0C8346;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
 .management-name {
-    font-weight: 600;
-    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.management-body .about-description {
+    margin: 16px 0;
+    color: #555;
 }
