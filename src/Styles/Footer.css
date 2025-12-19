@@ -2,7 +2,7 @@
     background-color: #1B2433;
 }
 .footer-container {
-    padding: 40px;
+    padding: 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,68 +17,75 @@
     color: #0C8346;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: .8px;
 }
 .ft-sign {
     color: #1ECAB0;
     font-family: Cambria, sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
 }
 .ft-description {
     width: 420px;
-    margin: 16px 0 40px;
+    margin: 12px 0 32px;
     color: #D0D3DA;
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: .8px;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
 }
 .ft-input-title {
     color: white;
     font-family: 'Rubik', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: .8px;
 }
 .ft-input {
-    width: 300px;
-    margin: 20px 8px 0 0;
-    padding: 16px 22px;
+    width: 280px;
+    margin: 16px 8px 0 0;
+    padding: 14px 24px;
     color: white;
     background-color: #293241;
     border: 1px solid transparent;
     border-radius: 50px;
     outline: transparent;
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    letter-spacing: .8px;
+    font-size: 16px;
+    letter-spacing: .5px;
+    transition: all 0.3s ease;
+}
+.ft-input:focus {
+    background-color: #3a4556;
+    border-color: #0C8346;
 }
 .ft-btn {
-    padding: 14px 18px;
+    padding: 14px 24px;
     color: white;
-    border: 2px solid transparent;
+    border: none;
     border-radius: 50px;
     outline: transparent;
     background-color: #0C8346;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Rubik', sans-serif;
-    letter-spacing: .8px;
+    font-weight: 600;
+    letter-spacing: .5px;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: all .3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 .ft-btn:hover {
-    color: #0C8346;
-    background-color: white;
-    border: 2px solid #0C8346;
+    background-color: #096836;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 /* Lists */
 .ft-list-title {
-    margin: 16px 0;
+    margin: 12px 0;
     font-family: 'Rubik', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: .8px;
 }
@@ -93,9 +100,9 @@
     transition: border .2s ease;
 }
 .ft-list-items li {
-    margin: 24px 0;
+    margin: 16px 0;
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: .8px;
 }
@@ -104,13 +111,13 @@
 }
 /* CopyRight */
 .ft-copyright {
-    padding: 24px 40px;
+    padding: 20px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #cbcdd3;
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: .8px;
 }
@@ -122,8 +129,8 @@
     gap: 12px;
 }
 .ft-social-links li a {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,8 +139,8 @@
     cursor: pointer;
 }
 .ft-social-links li a svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     padding: 1px;
 }
 .ft-social-links li a svg path {
@@ -150,23 +157,23 @@
     }
     .ft-description {
         width: 100%;
-        margin: 16px 0 24px;
+        margin: 12px 0 20px;
     }
     .ft-input {
         width: 100%;
-        margin: 16px 0;
+        margin: 12px 0;
     }
     .ft-btn {
         width: 100%;
-        margin: 0 0 16px;
+        margin: 0 0 12px;
     }
     .ft-copyright {
-        padding: 18px;
+        padding: 16px;
         display: block;
         text-align: center;
     }
     .ft-social-links {
-        margin: 16px 0 0;
+        margin: 12px 0 0;
     }
 }
 
@@ -177,20 +184,20 @@
     }
     .ft-description {
         width: 100%;
-        margin: 16px 0;
-        font-size: 16px;
+        margin: 12px 0;
+        font-size: 14px;
     }
     .ft-input,
     .ft-btn {
         width: 100%;
-        margin: 12px 0;
+        margin: 10px 0;
     }
     .ft-input {
-        padding: 12px 18px;
+        padding: 10px 16px;
         font-size: 14px;
     }
     .ft-btn {
-        padding: 12px 16px;
+        padding: 10px 14px;
         font-size: 14px;
     }
     .ft-list-items li {
@@ -205,13 +212,21 @@
         margin: 12px 0 0;
     }
     .ft-social-links li a {
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
         border-width: 1px;
     }
     .ft-social-links li a svg {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 }
-
+.footer-logo {
+    width: 10rem;
+}
+.developer-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #D0D3DA;
+    border-bottom: 2px solid #D0D3DA;
+}

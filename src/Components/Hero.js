@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
-import ContactForm from "./ContactForm";
 
 function Hero() {
   const navigate = useNavigate();
@@ -37,15 +36,15 @@ function Hero() {
     <div className="section-container" id="hero">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline" style={{ color: "white" }}>❤️ Health comes first</p>
-          <h2 className="text-title" style={{ color: "white" }}>
+          <p className="text-headline">❤️ Health comes first</p>
+          <h2 className="text-title">
             TS POLYCLINIC
           </h2>
-          <h3 className="text-title" style={{ fontSize: "1rem", color: "white" }}>
+          <h3 className="text-title text-subtitle">
             A SINGLE DOORWAY TO MULTISPECIALITY CARE
           </h3>
           <br />
-          <p className="text-descritpion" style={{ color: "white" }}>
+          <p className="text-descritpion">
             We care because we love to serve humanity. It’s not just our duty but a passion to serve you. Serving humanity gives peace to our souls. We feel peace inside when we worked for your health.
           </p>
           <button
@@ -55,28 +54,10 @@ function Hero() {
           >
             <FontAwesomeIcon icon={faCalendarCheck} /> Contact Us
           </button>
-          {/* <div className="text-stats">
-            <div className="text-stats-container">
-              <p>145k+</p>
-              <p>Receive Patients</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>50+</p>
-              <p>Expert Doctors</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>10+</p>
-              <p>Years of Experience</p>
-            </div>
-          </div> */}
         </div>
-
 
         <div className="hero-image-section">
           <img className="hero-image1" src={Doctor} alt="Doctor" />
-
         </div>
       </div>
 

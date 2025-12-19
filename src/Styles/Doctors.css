@@ -1,18 +1,16 @@
 .doctor-section {
-    padding: 32px;
-    margin: 32px auto;
+    padding: 24px;
+    margin: 24px auto;
     width: 80%;
     text-align: center;
-
     background-color: rgb(247, 247, 247);
-    
 }
 .dt-title-content {
-    margin: 0 0 64px 0;
+    margin: 0 0 48px 0;
 }
 .dt-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: .7px;
 }
@@ -27,25 +25,24 @@
     background-color: #9D2553;
     border-radius: 8px;
     left: 0;
-    bottom: -12px;
+    bottom: -10px;
 }
 .dt-description {
-    margin: 64px auto 0;
+    margin: 48px auto 0;
     text-align: center;
     color: rgb(77, 75, 75);
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: .8px;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
 }
 
 .dt-smalldes{
     text-align: center;
     color: rgb(77, 75, 75);
     font-family: 'Rubik', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: .8px;
-  
 }
 /* Doctor Cards */
 .dt-cards-content {
@@ -54,57 +51,58 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 }
 .dt-card {
-    width: 332px;
-    height: 400px;
-    gap: 32px;
-    text-align: left;
+    width: 300px;
+    height: auto;
+    padding-bottom: 24px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
     font-family: 'Rubik', sans-serif;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.dt-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 .dt-card-img {
     width: 100%;
-    height: 275px;
-    padding: 16px 32px 0;
-    background-position: center;
-    background-color: #DDE5F8;
-    border-radius: 20px;
+    height: 280px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    border-radius: 20px 20px 0 0;
+    padding: 0;
 }
 .dt-card-name {
-    margin: 12px 0 0 0;
+    margin: 16px 0 4px 0;
     font-size: 22px;
-    font-weight: bold;
-    letter-spacing: .7px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: .5px;
 }
 .dt-card-title {
-    margin: 6px 0 8px;
-    color: #494949;
+    margin: 0 0 12px;
+    color: #0C8346;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    letter-spacing: .7px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .dt-card-stars {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: .7px;
+    font-size: 16px;
+    color: #FFC107;
+    margin-bottom: 8px;
 }
 .dt-card-reviews {
-    color: #5a5a5a;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: .7px;
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
 }
-/* Responsive */
-/* @media screen and (max-width: 700px) {
-    .dt-title {
-        font-size: 32px;
-    }
-    .dt-description {
-        margin: 48px 0 0;
-        font-size: 18px;
-    }
-} */
 
 /* For screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -115,41 +113,46 @@
     }
 
     .dt-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .dt-description {
-        margin: 32px 0 0;
-        font-size: 16px;
+        margin: 24px 0 0;
+        font-size: 14px;
     }
 
     .dt-card {
-        width: calc(100% - 32px); /* Adjusting card width to fit the screen */
+        width: calc(100% - 24px); /* Adjusting card width to fit the screen */
         height: auto; /* Allowing cards to adjust their height */
-        margin-bottom: 20px; /* Adding space between cards */
+        margin-bottom: 16px; /* Adding space between cards */
     }
 
     .dt-card-img {
-        height: 200px; /* Reducing image height for smaller screens */
+        height: 180px; /* Reducing image height for smaller screens */
     }
 
     .dt-card-name {
-        font-size: 18px;
-        margin-top: 8px;
+        font-size: 16px;
+        margin-top: 6px;
     }
 
     .dt-card-title {
-        font-size: 16px;
-        margin-bottom: 6px;
+        font-size: 14px;
+        margin-bottom: 4px;
     }
 
     .dt-card-stars,
     .dt-card-reviews {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .dt-smalldes {
         font-size: 14px;
     }
 }
-
+.dt-description-margin {
+    margin-bottom: 0.8rem;
+}
+.dt-sunday-margin {
+    margin-bottom: 0.8rem;
+}

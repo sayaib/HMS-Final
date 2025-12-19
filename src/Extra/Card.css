@@ -1,0 +1,39 @@
+.card-paper {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+    border: 1px solid #fafafa;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    width: 100%;
+    margin: 16px; /* approximated from margin: 2 (theme spacing usually 8px * 2 = 16px) */
+}
+
+.card-icon-container {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 12px;
+    color: #ff0000;
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon-img {
+    min-width: 40px;
+    min-height: 40px;
+    color: #ffffff;
+}
+
+.card-text-container {
+    padding: 8px; /* padding: 1 -> 8px */
+    margin: 16px 0 16px 0;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    font-weight: 550;
+}

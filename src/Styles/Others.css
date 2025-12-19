@@ -1,0 +1,10 @@
+.others-margin {
+    margin: 1.5rem;
+}
+.others-margin-top {
+    margin-top: -0.5rem;
+}
+.others-list-item {
+    list-style-type: none;
+    text-align: left;
+}

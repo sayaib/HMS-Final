@@ -4,18 +4,17 @@ import staff from '../Assets/Images/staff.jpg'
 import value from '../Assets/Images/values.jpg'
 import mission from '../Assets/Images/mission.jpeg'
 import commitment from '../Assets/Images/commitment.jpg'
-
-
+import "../Styles/Others.css";
 
 const Others = () => {
     return (
         <>
-            <div style={{ margin: "2rem" }}>
+            <div className="others-margin">
                 <div className="ba-section" id="guidingPrinciple">
                     <div className="about-image-content">
-                        <img src={guiding} alt="Doctor Group" className="about-image1" />
+                        <img src={guiding} alt="Guiding Principles" className="about-image1" />
                     </div>
-                    <div className="about-text-content" style={{ marginTop: "-0.5rem" }}>
+                    <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
                             <span>Guiding Principle</span>
                         </h3>
@@ -23,20 +22,19 @@ const Others = () => {
                             There are our mantra to server the humanity at its fullest using our experienced personals in Management and doctors team:
                         </p>
                         <ul>
-                            <li className='dt-smalldes' style={{ listStyleType: "none", textAlign: "left" }}>
+                            <li className='dt-smalldes others-list-item'>
                                 1.Trust
-
                             </li>
-                            <li className='dt-smalldes' style={{ listStyleType: "none", textAlign: "left" }}>
+                            <li className='dt-smalldes others-list-item'>
                                 2.Transparency
                             </li>
-                            <li className='dt-smalldes' style={{ listStyleType: "none", textAlign: "left" }}>
+                            <li className='dt-smalldes others-list-item'>
                                 3.Mutual Respect
                             </li>
-                            <li className='dt-smalldes' style={{ listStyleType: "none", textAlign: "left" }}>
+                            <li className='dt-smalldes others-list-item'>
                                 4.Win / Win situation for all persons
                             </li>
-                            <li className='dt-smalldes' style={{ listStyleType: "none", textAlign: "left" }}>
+                            <li className='dt-smalldes others-list-item'>
                                 5.Long Term Commitment
                             </li>
                         </ul>
@@ -50,7 +48,7 @@ const Others = () => {
                 <div className="about-section" id="staff">
 
 
-                    <div className="about-text-content" style={{ marginTop: "-0.5rem" }}>
+                    <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
                             <span>STAFF</span>
                         </h3>
@@ -60,7 +58,7 @@ const Others = () => {
 
                     </div>
                     <div className="about-image-content">
-                        <img src={staff} alt="Doctor Group" className="about-image1" />
+                        <img src={staff} alt="Staff" className="about-image1" />
                     </div>
                 </div>
 
@@ -71,9 +69,9 @@ const Others = () => {
                 <div className="ba-section" id="ourValues">
 
                     <div className="about-image-content">
-                        <img src={value} alt="Doctor Group" className="about-image1" />
+                        <img src={value} alt="Our Values" className="about-image1" />
                     </div>
-                    <div className="about-text-content" style={{ marginTop: "-0.5rem" }}>
+                    <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
                             <span>OUR VALUES</span>
                         </h3>
@@ -92,7 +90,7 @@ const Others = () => {
                 <div className="about-section" id="missionVission">
 
 
-                    <div className="about-text-content" style={{ marginTop: "-0.5rem" }}>
+                    <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
                             <span>MISSION & VISION</span>
                         </h3>
@@ -106,7 +104,7 @@ const Others = () => {
                     </div>
 
                     <div className="about-image-content">
-                        <img src={mission} alt="Doctor Group" className="about-image1" />
+                        <img src={mission} alt="Mission and Vision" className="about-image1" />
                     </div>
 
                 </div>
@@ -118,20 +116,16 @@ const Others = () => {
                 <div className="ba-section" id="ourCommitment">
 
                     <div className="about-image-content">
-                        <img src={commitment} alt="Doctor Group" className="about-image1" />
+                        <img src={commitment} alt="Our Commitment" className="about-image1" />
                     </div>
-                    <div className="about-text-content" style={{ marginTop: "-0.5rem" }}>
+                    <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
                             <span>OUR COMMITMENTS</span>
                         </h3>
                         <p className="about-description">
                             The Company’s name and logo reflects the nature of the company and its commitment to serve its clients/patients. In an effort to gain the confidence of the clients/patients and expand the market, Treatment Solution Polyclinic will work out plans and schemes to bring preventive care in the forefront. It will educate the clients/patients on the importance of timely health checkups to diagnose minor ailments and advise treatment immediately. It will partner with local council and Insurance Companies and Corporate bodies to tap in more clients/patients. It will partner with the Specialized doctors and provide quality health care.
                         </p>
-
-
                     </div>
-
-
 
                 </div>
             </div>

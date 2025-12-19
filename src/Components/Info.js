@@ -3,16 +3,9 @@ import InformationCard from "./InformationCard";
 import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
 import Card from "../Extra/Card";
-
-
-import { Grid, Typography, Divider } from "@mui/material";
-import SubwayIcon from "@mui/icons-material/Subway";
-import ExploreIcon from "@mui/icons-material/Explore";
-import DonutSmallIcon from "@mui/icons-material/DonutSmall";
-import AssessmentIcon from "@mui/icons-material/Assessment";
+import { Grid, Divider } from "@mui/material";
 
 /* --------------------------------- images --------------------------------- */
-
 
 import imageOne from '../Assets/Images/Rectangle 84-1.png'
 import imageTwo from '../Assets/Images/Rectangle 84-2.png'
@@ -30,7 +23,6 @@ import imageTwelve from '../Assets/Images/Rectangle 84-12.png'
 import imageThirteen from '../Assets/Images/Rectangle 84-13.png'
 import imageFourteen from '../Assets/Images/Rectangle 84-14.png'
 import imageFifteen from '../Assets/Images/Rectangle 84-15.png'
-import imageSixteen from '../Assets/Images/Rectangle 84-16.png'
 import imageSevenTeen from '../Assets/Images/Rectangle 84.png'
 
 function Info() {
@@ -40,13 +32,6 @@ function Info() {
         <h3 className="info-title">
           <span>Services</span>
         </h3>
-        {/* <p className="info-description">
-          We bring healthcare to your convenience, offering a comprehensive
-          range of on-demand medical services tailored to your needs. Our
-          platform allows you to connect with experienced online doctors who
-          provide expert medical advice, issue online prescriptions, and offer
-          quick refills whenever you require them.
-        </p> */}
       </div>
 
       <div className="info-cards-content">
@@ -81,29 +66,16 @@ function Info() {
       </div>
 
       <div>
-
         <Grid
           align="center"
           border="1px solid #000"
           alignItems="center"
           justify="center"
         >
-          {/* <Grid style={{ margin: 20 }}>
-            <Typography variant="h4">
-              <strong>Awesome Card</strong>
-            </Typography>
-          </Grid>
-          <Grid style={{ margin: 20 }}>
-            <Typography>change the screen size to see the effect!</Typography>
-          </Grid> */}
-          {/* 
-          <Typography variant="h6">
-            <strong>Hidde icon on breakpoints sm (between 600px - 960px)</strong>
-          </Typography> */}
-          <Divider style={{ margin: 20 }} />
+          <Divider className="grid-divider" />
           <Grid container item xs={12} alignItems="center" justify="center">
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="DonutSmall"
                   secondary="Cardiology"
@@ -112,7 +84,7 @@ function Info() {
                   iconPerformance={imageSevenTeen}
                 />
               </Grid>
-              <Grid container style={{ marginBottom: 25 }} item lg={6}>
+              <Grid container className="grid-margin-bottom" item lg={6}>
                 <Card
                   primary="Assessment"
                   secondary="Cardiac Surgery"
@@ -124,7 +96,7 @@ function Info() {
 
             </Grid>
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Explore"
                   secondary="Neurology"
@@ -134,7 +106,7 @@ function Info() {
                 />
               </Grid>
 
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Subway"
                   secondary="Neurosurgery"
@@ -149,7 +121,7 @@ function Info() {
             {/* ---------------------------------- */}
 
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="DonutSmall"
                   secondary="Psychiatrist"
@@ -158,7 +130,7 @@ function Info() {
                   iconPerformance={imageFour}
                 />
               </Grid>
-              <Grid container style={{ marginBottom: 25 }} item lg={6}>
+              <Grid container className="grid-margin-bottom" item lg={6}>
                 <Card
                   primary="Assessment"
                   secondary="Gastroenterology"
@@ -170,7 +142,7 @@ function Info() {
 
             </Grid>
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Explore"
                   secondary="Gynecology"
@@ -180,7 +152,7 @@ function Info() {
                 />
               </Grid>
 
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Subway"
                   secondary="Nephrology"
@@ -195,7 +167,7 @@ function Info() {
 
 
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="DonutSmall"
                   secondary="Urology"
@@ -204,7 +176,7 @@ function Info() {
                   iconPerformance={imageEight}
                 />
               </Grid>
-              <Grid container style={{ marginBottom: 25 }} item lg={6}>
+              <Grid container className="grid-margin-bottom" item lg={6}>
                 <Card
                   primary="Assessment"
                   secondary="Chest Medicine"
@@ -216,7 +188,7 @@ function Info() {
 
             </Grid>
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Explore"
                   secondary="General Surgery"
@@ -226,7 +198,7 @@ function Info() {
                 />
               </Grid>
 
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Subway"
                   secondary="Orthopedics"
@@ -242,7 +214,7 @@ function Info() {
 
 
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="DonutSmall"
                   secondary="General Medicine"
@@ -251,7 +223,7 @@ function Info() {
                   iconPerformance={imageTwelve}
                 />
               </Grid>
-              <Grid container style={{ marginBottom: 25 }} item lg={6}>
+              <Grid container className="grid-margin-bottom" item lg={6}>
                 <Card
                   primary="Assessment"
                   secondary="Diabetology"
@@ -263,7 +235,7 @@ function Info() {
 
             </Grid>
             <Grid container item sm={6}>
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Explore"
                   secondary="Dermatology"
@@ -273,7 +245,7 @@ function Info() {
                 />
               </Grid>
 
-              <Grid container item lg={6} style={{ marginBottom: 25 }}>
+              <Grid container item lg={6} className="grid-margin-bottom">
                 <Card
                   primary="Subway"
                   secondary="ENT"

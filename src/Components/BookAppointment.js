@@ -3,18 +3,10 @@ import Doctor from "../Assets/doctor-book-appointment.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,
-  faCalendarCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
 import "../Styles/BookAppointment.css";
 
 function BookAppointment() {
-  const navigate = useNavigate();
-
-  const handleBookAppointmentClick = () => {
-    navigate("/appointment");
-  };
-
   return (
     <div className="ba-section">
       <div className="ba-image-content">
@@ -30,21 +22,11 @@ function BookAppointment() {
         </p>
 
         <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> OPEN HOURS :
+          <FontAwesomeIcon icon={faCircleCheck} className="ba-icon-blue" /> OPEN HOURS :
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Monday - Sunday : 8:00 AM - 8:00 PM
+          <FontAwesomeIcon icon={faCircleCheck} className="ba-icon-blue" /> Monday - Sunday : 8:00 AM - 8:00 PM
         </p>
-        {/* <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Sunday : 8:00 AM - 2:00 PM
-        </p> */}
-        {/* <button
-            className="text-appointment-btn"
-            type="button"
-            onClick={handleBookAppointmentClick}
-          >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
-          </button> */}
       </div>
     </div>
   );

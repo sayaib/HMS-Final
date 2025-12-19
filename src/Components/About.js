@@ -29,11 +29,6 @@ function About() {
           title="Make a Schedule"
           description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
         />
-
-        {/* <SolutionStep
-          title="Get Your Solutions"
-          description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
-        /> */}
       </div>
     </div>
   );
