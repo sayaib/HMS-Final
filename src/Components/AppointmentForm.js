@@ -39,8 +39,8 @@ function AppointmentForm() {
           setIsSubmitting(false);
         },
         (error) => {
-          console.log(error.text);
-          Swal.fire("Error!", "Something went wrong. Please try again.", "error");
+          console.error("EmailJS Error:", error);
+          Swal.fire("Error!", `Failed to send: ${error.text || "Unknown error"}. Please check your connection or configuration.`, "error");
           setIsSubmitting(false);
         }
       );
@@ -60,6 +60,9 @@ function AppointmentForm() {
         </h2>
 
         <form ref={form} className="form-content" onSubmit={handleSubmit}>
+          <input type="hidden" name="to_email" value="tspolyclinic.in@gmail.com" />
+          <input type="hidden" name="subject" value="New Contact Us Inquiry" />
+
           <div className="form-group">
             <label htmlFor="user_name">Name:</label>
             <input
