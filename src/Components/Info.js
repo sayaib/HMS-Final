@@ -5,11 +5,11 @@ import "../Styles/Info.css";
 import Card from "../Extra/Card";
 
 
-import { Grid, Typography, Divider } from "@material-ui/core";
-import SubwayIcon from "@material-ui/icons/Subway";
-import ExploreIcon from "@material-ui/icons/Explore";
-import DonutSmallIcon from "@material-ui/icons/DonutSmall";
-import AssessmentIcon from "@material-ui/icons/Assessment";
+import { Grid, Typography, Divider } from "@mui/material";
+import SubwayIcon from "@mui/icons-material/Subway";
+import ExploreIcon from "@mui/icons-material/Explore";
+import DonutSmallIcon from "@mui/icons-material/DonutSmall";
+import AssessmentIcon from "@mui/icons-material/Assessment";
 
 /* --------------------------------- images --------------------------------- */
 
