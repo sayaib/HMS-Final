@@ -242,10 +242,21 @@
     }
     
     .navbar-btn-group {
-        display: none; /* Hide action buttons on mobile to reduce clutter, or keep them if preferred */
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 8px;
     }
-    
-    /* Option: Keep one primary CTA on mobile if needed, but standard pattern is usually just hamburger */
+
+    .navbar-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar-btn svg {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 600px) {
