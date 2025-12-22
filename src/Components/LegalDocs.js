@@ -70,7 +70,7 @@ function LegalDocs() {
     <div className="legal-page">
       <header className="legal-header">
         <Link to="/" className="legal-logo-link">
-          <img src={logo} className="legal-logo" alt="Health Plus Logo" />
+          <img src={logo} className="legal-logo" alt="Health Plus Logo" loading="lazy" decoding="async" />
         </Link>
         <h1 className="legal-main-title">Terms and Conditions</h1>
         <p className="legal-last-updated">Last Updated: {new Date().toLocaleDateString()}</p>

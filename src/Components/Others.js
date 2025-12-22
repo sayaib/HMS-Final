@@ -12,7 +12,7 @@ const Others = () => {
             <div className="others-margin">
                 <div className="ba-section" id="guidingPrinciple">
                     <div className="about-image-content">
-                        <img src={guiding} alt="Guiding Principles" className="about-image1" />
+                        <img src={guiding} alt="Guiding Principles" className="about-image1" loading="lazy" decoding="async" />
                     </div>
                     <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
@@ -62,7 +62,7 @@ const Others = () => {
                         </div>
                     </div>
                     <div className="about-image-content">
-                        <img src={staff} alt="Staff" className="about-image1 staff-image-styled" />
+                        <img src={staff} alt="Staff" className="about-image1 staff-image-styled" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@ const Others = () => {
 
                 <div className="ba-section" id="ourValues">
                     <div className="about-image-content">
-                        <img src={value} alt="Our Values" className="about-image1 values-image-styled" />
+                        <img src={value} alt="Our Values" className="about-image1 values-image-styled" loading="lazy" decoding="async" />
                     </div>
                     <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
@@ -130,7 +130,7 @@ const Others = () => {
                     </div>
 
                     <div className="about-image-content">
-                        <img src={mission} alt="Mission and Vision" className="about-image1 mission-image-styled" />
+                        <img src={mission} alt="Mission and Vision" className="about-image1 mission-image-styled" loading="lazy" decoding="async" />
                     </div>
 
                 </div>
@@ -142,7 +142,7 @@ const Others = () => {
                 <div className="ba-section" id="ourCommitment">
 
                     <div className="about-image-content">
-                        <img src={commitment} alt="Our Commitment" className="about-image1 commitment-image-styled" />
+                        <img src={commitment} alt="Our Commitment" className="about-image1 commitment-image-styled" loading="lazy" decoding="async" />
                     </div>
                     <div className="about-text-content others-margin-top">
                         <h3 className="about-title">
@@ -201,4 +201,4 @@ const Others = () => {
     )
 }
 
-export default Others
+export default React.memo(Others)

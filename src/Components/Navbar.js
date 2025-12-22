@@ -40,7 +40,7 @@ function Navbar() {
     <div className={`navbar-section ${isSticky ? "navbar-sticky" : ""}`}>
       <h1 className="navbar-title">
         <a href="#hero" >
-          <img src={logo} className="navbar-sign navbar-logo" alt="Health Plus Logo" />
+          <img src={logo} className="navbar-sign navbar-logo" alt="Health Plus Logo" loading="eager" decoding="async" />
         </a>
       </h1>
 
@@ -165,4 +165,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default React.memo(Navbar);

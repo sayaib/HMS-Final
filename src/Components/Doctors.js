@@ -79,4 +79,4 @@ function Doctors() {
   );
 }
 
-export default Doctors;
+export default React.memo(Doctors);

@@ -7,6 +7,9 @@ import logo from '../Assets/Images/logo.png'
 
 function AppointmentForm() {
   const form = useRef();
+  const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -21,16 +24,16 @@ function AppointmentForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      Swal.fire("Error!", "Missing email configuration. Please try again later.", "error");
+      setIsSubmitting(false);
+      return;
+    }
+
     emailjs
-      .sendForm(
-        "service_hibzs9r",
-        "template_ik8c1fi",
-        form.current,
-        "cvnvMvad3_pdZxpHj"
-      )
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           Swal.fire("Sent!", "Email sent successfully", "success");
           setPatientName("");
           setPatientNumber("");
@@ -39,7 +42,6 @@ function AppointmentForm() {
           setIsSubmitting(false);
         },
         (error) => {
-          console.error("EmailJS Error:", error);
           Swal.fire("Error!", `Failed to send: ${error.text || "Unknown error"}. Please check your connection or configuration.`, "error");
           setIsSubmitting(false);
         }
@@ -50,7 +52,7 @@ function AppointmentForm() {
     <div className="appointment-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          <img src={logo} className="navbar-sign appointment-logo" alt="Health Plus Logo" />
+          <img src={logo} className="navbar-sign appointment-logo" alt="Health Plus Logo" loading="lazy" decoding="async" />
         </Link>
       </h1>
 

@@ -2,6 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+:root {
+    --brand-primary: #0C8346;
+    --brand-primary-dark: #096836;
+    --brand-accent: #1B2433;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --bg-default: #ffffff;
+    --bg-muted: #f8f9fa;
+    --nav-offset: 88px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-md: 0 10px 20px rgba(0,0,0,0.12);
+    --shadow-lg: 0 15px 30px rgba(0,0,0,0.2);
+    --container-max: 1200px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +27,16 @@
 }
 html {
     scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: var(--nav-offset);
+}
+
+body {
+    font-family: 'Poppins', 'Rubik', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-default);
 }
 
 /* Custom Scroll Bar */
@@ -19,6 +47,24 @@ html {
     background-color: #FFFFFF;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #0C8346;
+    background-color: var(--brand-primary);
     border-radius: 4rem;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media screen and (max-width: 950px) {
+    :root { --nav-offset: 96px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }

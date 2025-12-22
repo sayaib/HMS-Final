@@ -7,7 +7,7 @@ function Reviews() {
   return (
     <div className="about-section management-margin-bottom" id="management">
       <div className="about-image-content">
-        <img src={management} alt="Management Team" className="about-image1" />
+        <img src={management} alt="Management Team" className="about-image1" loading="lazy" decoding="async" />
       </div>
 
       <div className="about-text-content management-margin-top">
@@ -38,4 +38,4 @@ function Reviews() {
   );
 }
 
-export default Reviews;
+export default React.memo(Reviews);

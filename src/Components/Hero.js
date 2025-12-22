@@ -57,7 +57,7 @@ function Hero() {
         </div>
 
         <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+          <img className="hero-image1" src={Doctor} alt="Doctor" loading="eager" decoding="async" />
         </div>
       </div>
 
@@ -71,4 +71,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default React.memo(Hero);

@@ -29,4 +29,4 @@ const Location = () => {
     )
 }
 
-export default Location;
+export default React.memo(Location);
