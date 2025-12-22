@@ -3,7 +3,7 @@ import InformationCard from "./InformationCard";
 import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
 import Card from "../Extra/Card";
-import { Grid, Divider } from "@mui/material";
+import { Grid } from "@mui/material";
 
 /* --------------------------------- images --------------------------------- */
 
