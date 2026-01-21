@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Preloader from "./Components/Preloader";
 
 const Home = lazy(() => import("./Pages/Home"));
 const Legal = lazy(() => import("./Pages/Legal"));
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router basename="/">
-        <Suspense fallback={<div style={{ padding: 24 }}>Loading...</div>}>
+        <Suspense fallback={<Preloader />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/legal" element={<Legal />} />
